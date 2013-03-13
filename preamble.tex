@@ -1,0 +1,73 @@
+% Strict mode
+
+\RequirePackage[l2tabu, orthodox]{nag} % Warn when using deprecated constructs
+
+% Document class and packages
+
+\documentclass[10pt,a4paper,parskip,fleqn]{scrartcl}
+\linespread{1.05} % Palatino needs more leading space
+\usepackage[a4paper,vmargin={30mm},hmargin={30mm}]{geometry} % Page margins
+\usepackage[ngerman]{babel} % New German hyphenation (multilingual support)
+\usepackage[utf8x]{inputenc} % Unicode support
+\usepackage{amsmath} % AMS math package
+\usepackage{amsfonts} % AMS fonts
+\usepackage{amssymb} % AMS symbols
+\usepackage{fixmath} % ISO conform greek letters
+\usepackage{graphicx} % Graphics support
+\usepackage{float} % Use H placement specifier for floats
+\usepackage{longtable} % Tables across several pages
+\usepackage{hyperref} % Hyperlinks
+\usepackage{xfrac} % Split level fractions
+\usepackage{multirow} % Span multiple rows in a table
+
+% Font configuration
+
+\usepackage[sc]{mathpazo} % Use palatino font
+\usepackage[T1]{fontenc} % Use correct font encoding
+\usepackage[babel=true]{microtype} % Micro-typographic optimizations
+\addtokomafont{disposition}{\rmfamily} % Set palatino as heading font
+
+% Math stuff configuration
+
+\numberwithin{equation}{subsection} % Numer equations with triples
+\setcounter{MaxMatrixCols}{20} % Allow large matrices
+
+% Useful macros
+
+\newcommand{\uminus}{\scalebox{0.75}[1.0]{\( - \)}}
+\newcommand{\mtx}[1]{\ensuremath{\mathbf{#1}}}
+
+% TikZ / PGF
+
+\usepackage{pgf} % Backend for TikZ
+\usepackage{tikz} % TikZ vector graphics
+\usepackage[siunitx,europeanresistors,europeanports]{circuitikz} % Electircal circuits
+%\usetikzlibrary{arrows,automata,matrix,decorations.pathreplacing}
+
+% Configure table spacing
+
+\renewcommand{\arraystretch}{1.3}
+
+% Creative Commons icons
+
+\graphicspath{{texutils/ccicons/}}
+\input{texutils/ccicons.tex}
+
+% License macro
+
+\gdef\ccLogos{\ccLogo\;\ccShareAlike}
+\newcommand{\license}[1]{\renewcommand{\ccLogos}{#1}}
+
+% Settings and macros for titlepage
+
+\input{texutils/authorsfromfile.tex} % Load authors from CONTRIBUTORS.txt
+\input{revision.tex} % Show last git change date
+
+\newcommand{\moduleName}[1]{\gdef\modname{#1}}
+\newcommand{\moduleAbbr}[1]{\gdef\modabbr{#1}}
+\gdef\modurl{https://github.com/HSR-Stud/\modabbr/}
+
+\title{\modabbr\ Zusammenfassung}
+\subject{\modname}
+\authorsfromfile{CONTRIBUTORS.txt}{\url{\modurl}}
+\date{Stand: \revisiondate}

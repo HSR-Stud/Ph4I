@@ -1,0 +1,19 @@
+\usepackage{fancyhdr} % Fancy headers
+
+% Capture title and author
+\makeatletter
+\let\Title\@title
+\let\Author\@author
+\normalfont\sbox0{\normalfont\Title\qquad\qquad\Author}
+\ifdim\wd0>\textwidth\def\Author{\modurl}\fi
+\makeatother
+
+% Fancy headers configuration
+\pagestyle{fancy}
+\fancyhead{} % Clear all header fields
+\fancyhead[LO,LE]{\bfseries \Title}
+\fancyhead[RO,RE]{\Author}
+\fancyfoot{} % Clear all footer fields
+\fancyfoot[CO,CE]{Page \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
