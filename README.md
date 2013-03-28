@@ -3,7 +3,7 @@ Ph4I
 
 Physik 4 für Informatiker.
 
-Work in progress.
+**Work in progress.**
 
 Building
 --------

@@ -6,42 +6,61 @@ fliessende Ladung.
 TODO formel
 
 \textbf{Stromdichte}:
-\[
-	j \approx \frac{\textrm{Strom}}{\textrm{Fläche}} \approx \vec{E}
-\]\[
-	j = \rho \cdot E = \frac{1}{\rho}E
-\]
+\begin{align}
+	& j \approx \frac{\textrm{Strom}}{\textrm{Fläche}} \approx \vec{E} \\
+	& j = \rho \cdot E = \frac{1}{\rho}E
+\end{align}
 
 \textbf{Elektrische Leitfähigkeit}:
-\[
-	j = \sigma \cdot \vec{E}
-\]\[
-	\sigma = \frac{j}{\vec{E}}
-\]
+\begin{align}
+	& j = \sigma \cdot \vec{E} \\
+	& \sigma = \frac{j}{\vec{E}}
+\end{align}
 
 \textbf{Spezifischer Widerstand}:
-\[
-	\rho = \frac{1}{\sigma}
-\]
+\begin{align}
+	& \rho = \frac{1}{\sigma}
+\end{align}
 
 \subsection{Widerstände}
 
 \subsubsection{Innenwiderstand}
 
 Innenwiderstand einer Stromquelle:
-\[
-	R_i = R \left(\frac{U_0}{U} - 1\right)
-\]
+\begin{align}
+	& R_i = R \left(\frac{U_0}{U} - 1\right)
+\end{align}
 
 $U_0$: Ohne Last\\
 $U$: Mit Last
 
 \subsubsection{Schaltungen}
 
-Seriell:
+\begin{minipage}[t]{.5\linewidth}
+	Seriell:\\\\
+	\input{tikz/widerstaende_seriell}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+	Parallel:\\\\
+	\input{tikz/widerstaende_parallel}
+\end{minipage}
 
-\input{tikz/widerstaende_seriell}
 
-Parallel:
+\subsection{Kirchhoffsche Regeln}
 
-\input{tikz/widerstaende_parallel}
+\subsubsection{Knotenregel}
+
+In einem Knotenpunkt eines elektrischen Netzwerkes ist die Summe der
+zufliessenden Ströme gleich der Summe der abfliessenden Ströme.
+\[
+	\sum_{k=1}^n I_k = 0
+\]
+
+\subsubsection{Maschenregel}
+
+Alle Teilspannungen eines Umlaufs bzw. einer Masche in einem elektrischen
+Netzwerk addieren sich zu null. Die Richtung des Umlaufes kann beliebig gewählt
+werden; sie legt dann aber die Vorzeichen der Teilspannungen fest.
+\[
+	\sum_{k=1}^n U_k = 0
+\]
