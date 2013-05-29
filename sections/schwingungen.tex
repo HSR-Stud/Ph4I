@@ -21,19 +21,50 @@ Bei einem Stab kann man die Breite vernachlässigen:
 
 \input{tikz/welle}
 
-Ausbreitungsgeschwindigkeit $c$:
+Frequenz $f$ (manchmal auch als $\nu$ bezeichnet):
 \[
-	c = \lambda f
+	f = \frac{u}{\lambda}
 \]
 Kreisfrequenz $\omega$:
 \[
-	\omega = \frac{2 \pi}{T}
+	\omega = \frac{2 \pi}{T} = 2 \pi f
+\]
+Wellenlänge $\lambda$:
+\[
+	\lambda = \frac{2 \pi}{k} = \frac{u}{f}
 \]
 Wellenzahl $k$:
 \[
-	k = \frac{2 \pi}{\lambda}
+k = \frac{\omega}{u} = \frac{2 \pi}{\lambda}
+\]
+Periode, Schwingungsdauer $T$:
+\[
+	T = \frac{2 \pi}{\omega}
+\]
+Phase $\varphi$:
+\[
+	\varphi = \omega t - k x
+\]
+Phasengeschwindigkeit, Wellengeschwindigkeit $u$:
+\[
+	u = \frac{\omega}{k} = \lambda f
 \]
 Auslenkung $\xi$ am Ort $x$ zum Zeitpunkt $t$:
 \[
 	\xi = \xi_0 \sin (\omega t - k x - \varphi_0)
+\]
+
+\subsubsection{Akkustischer Dopplereffekt}
+
+Bewegte Quelle, ruhender Beobachter, kein Winkel:
+\[
+	f' = \frac{1}{1 \mp \frac{v_Q}{u}} f
+\]
+Ruhende Quelle, bewegter Beobachter, kein Winkel:
+\[
+	f' = (1 \pm \frac{v_B}{u}) f
+\]
+Allgemeine Gleichung mit Winkel $\vartheta$:
+\[
+	f_B = \frac{u + v_B \cos \vartheta_B}{u - v_Q \cos \vartheta_Q} f_Q
 \]
