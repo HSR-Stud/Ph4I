@@ -12,6 +12,8 @@ Building
     git submodule update
     make
 
+Jeweils aktuelle Version gibts hier: http://latexbuilder.dbrgn.ch/pdf/Ph4I/Ph4I.pdf
+
 Lizenz
 ------
 
