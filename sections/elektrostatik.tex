@@ -1,5 +1,23 @@
 \section{Elektrostatik}
 
+\subsection{Abkürzungen}
+
+\begin{itemize}
+	\item $E$: Elektrische Feldstärke
+	\item $\vec{E}$: Elektrisches Feld 
+	\item $E_{pot}$: Potentielle Energie
+	\item $\varepsilon$: Dielektrizitätskonstante
+	\item $\varepsilon_0$: Elektrische Feldkonstante
+	\item $\varepsilon_r$: Permittivitätszahl
+	\item $\vec{F}$: Kraft
+	\item $\vec{p}$: Dipolmoment
+	\item $Q$: Ladung
+	\item $U$: Elektrische Spannung
+	\item $W$: Arbeit
+	\item $\varphi$: Elektrisches Potential
+	\item $\Phi$: Elektrisches Fluss
+\end{itemize}
+
 \subsection{Elektrische Ladung}
 
 Die Ladung 1 Coulomb (C) entspricht der Ladung von $\approx 6.24 \cdot 10^{18}$
@@ -17,7 +35,7 @@ proportional zum Quadrat ihres Abstandes $r$.
 Dabei ist $a$ eine Konstante die von der Wahl der Ladungseinheit abhängt. Im SI
 System ist $a$ folgendermassen festgelegt:
 \[
-	a = \frac{1}{4 \pi \varepsilon_o}
+	a = \frac{1}{4 \pi \varepsilon_0}
 \]
 Hier wiederum ist $\varepsilon_0$ die \textbf{elektrische Feldkonstante}.
 \[
@@ -33,6 +51,23 @@ Oder in vektorieller Form, zwischen den zwei Punkten $1$ und $2$:
 	\vec{F_{12}} = \frac{1}{4\pi\varepsilon_0}
 	\cdot \frac{Q_1Q_2}{|\vec{r_{12}}|^3}
 	\cdot \vec{r_{12}}
+\]
+
+\subsection{Elektrisches Potential}
+
+Die potentielle Energie pro Ladungseinheit wird als \textit{elektrisches
+Potential} bezeichnet.
+\[
+	\varphi = \frac{1}{Q} E_{pot}
+\]
+Somit ergibt sich als elektrisches Potential der Punktladung $Q_0$ im Abstand $r$:
+\[
+	\varphi = \frac{1}{4\pi\varepsilon_0} \frac{Q_0}{r}
+\]
+
+\subsection{Elektrische Spannung}
+\[
+	U_{AB} = \frac{1}{Q} W_{AB} = \int\limits^B_A \vec{E} \cdot d \cdot \vec{s}
 \]
 
 \subsection{Ladungsverteilungen}
@@ -53,6 +88,36 @@ Die Einheiten der Ladunsgdichten sind $C/m^3$ bzw. $C/m^2$.
 Die elektrische Feldstärke $E$ beträgt:
 \[
 	E = \frac{F}{Q}
+\]
+
+\subsection{Elektrischer Dipol}
+
+Ein elektrischer Dipol besteht aus zwei gleich grossen Punktladungen $Q$
+entgegengesetzten Vorzeichens in einem festen Abstand $l$.
+
+Der Dipolmoment $\vec{p}$ ist ein Vektor, er von der negativen Ladung zur
+positiven Ladung zeigt und dessen Betrag gleich dem Produkt von Ladung $Q$ und
+Abstand $l$ ist:
+\[
+	|\vec{p}| = Q \cdot l
+\]
+Das Potential in einem Punkt $P$ (siehe folgende Abbildung) ergibt sich aus der
+Summe der zwei einzelnen Potentialen der positiven und negativen Punktladungen.
+
+\begin{center}
+\input{tikz/dipol_potential}
+\end{center}
+
+Die Summe der beiden Punktpotentiale ist:
+\[
+	\varphi
+		= \frac{Q}{4\pi\varepsilon_0} \left(\frac{1}{r_1} - \frac{1}{r_2}\right)
+		= \frac{Q}{4\pi\varepsilon_0} \frac{r_2 - r_1}{r_1 r_2}
+\]
+Sofern der Abstand $r$ im Vergleich zum Dipolabstand $l$ gross ist, gilt die
+Näherung:
+\[
+	\varphi = \frac{Q}{4\pi\varepsilon_0} \frac{p}{r^2} \cos \vartheta
 \]
 
 \subsection{Gesetz von Gauss}

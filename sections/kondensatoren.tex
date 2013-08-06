@@ -2,29 +2,50 @@
 
 Kapazität:
 \[
-	C = \frac{Q}{U}
+	C = \frac{Q}{U} \quad \left[F\right]
 \]
 
 Kapazität Plattenkondensator:
 \[
-	C = \frac{\varepsilon_0 A}{d}
+	C = \frac{\varepsilon_0 A}{d} \quad \left[F\right]
 \]
 $d$: Abstand zwischen Platten\\
 $A$: Fläche einer Platte
 
+Energie des geladenen Kondensators:
+\[
+	E = \frac{CU^2}{2} = \frac{Q^2}{2C} = \frac{QU}{2} \quad \left[J\right]
+\]
+
 \subsection{Parallel-Schaltung}
 
-Kapazitäten addieren sich.
+Kapazitäten, Spannungen und Energie addieren sich. Spannung und Energie verteilt
+sich proportional zur Kapazität der Kondensatoren.
 
 \begin{minipage}{.5\linewidth}
 	\input{tikz/kondensatoren_parallel}
 \end{minipage}
 \begin{minipage}{.5\linewidth}
 	\begin{align*}
-		& C_1 = C_2 \\
+		& C = C_1 + C_2 \\
+		& U = U_1 + U_2 \\
+		& E = E_1 + E_2 \\
+		& \frac{U_1}{C_1} = \frac{U_2}{C_2} \\
 		& \Phi_A = \Phi_C \\
 		& \Phi_B = \Phi_D \\
-		& U = U_1 = U_2 \\
-		& Q = Q_1 = Q_2
 	\end{align*}
 \end{minipage}
+
+\subsection{Durchschlagsfestigkeit}
+
+Die Durchschlagsfestigkeit ist die maximal mögliche Spannung pro Distanz
+zwischen zwei unterschiedlich geladenen Objekten (zB Kondensatorplatten). Wird
+die Spannung überschritten oder die Distanz unterschritten, geschieht ein
+Ladungsaustausch ($\rightarrow$ es "`blitzt und tätscht"').
+
+\subsection{Dielektrika}
+
+Kapazität des Plattenkondensators mit Dielektrikum:
+\[
+	C = \varepsilon_r \varepsilon_0 \cdot \frac{A}{d} = \varepsilon \cdot \frac{A}{d}
+\]
