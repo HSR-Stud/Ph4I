@@ -104,15 +104,18 @@ TODO Eigenschwingungen: Grundschwingungen und Oberschwingungen
 
 \subsubsection{Akkustischer Dopplereffekt}
 
-Bewegte Quelle, ruhender Beobachter, kein Winkel:
+Gegeben:
+
+\begin{tabular}{ll}
+$S$: Sender & $E$: Empfänger \\
+$f$: Frequenz & $v$: Geschwindigkeit \\
+$\vartheta$: Winkel & $c$: Schallgeschwindigkeit \\
+\end{tabular}
+
+Dann gilt:
 \[
-	f' = \frac{1}{1 \mp \frac{v_Q}{u}} f
+	f_E = f_S \cdot \frac{c - v_E \cdot \cos(\vartheta_E)}{c - v_S \cdot \cos (\vartheta_S)}
+	\quad \left[ Hz \right]
 \]
-Ruhende Quelle, bewegter Beobachter, kein Winkel:
-\[
-	f' = (1 \pm \frac{v_B}{u}) f
-\]
-Allgemeine Gleichung mit Winkel $\vartheta$:
-\[
-	f_B = \frac{u + v_B \cos \vartheta_B}{u - v_Q \cos \vartheta_Q} f_Q
-\]
+Für die Vorzeichen von $v_S$ und $v_E$ gilt, dass bei Bewegung in Richtung der
+Schallwelle die Geschwindigkeiten positiv sind und umgekehrt.
