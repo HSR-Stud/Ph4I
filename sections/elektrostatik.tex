@@ -1,23 +1,5 @@
 \section{Elektrostatik}
 
-\subsection{Abkürzungen}
-
-\begin{itemize}
-	\item $E$: Elektrische Feldstärke
-	\item $\vec{E}$: Elektrisches Feld 
-	\item $E_{pot}$: Potentielle Energie
-	\item $\varepsilon$: Dielektrizitätskonstante
-	\item $\varepsilon_0$: Elektrische Feldkonstante
-	\item $\varepsilon_r$: Permittivitätszahl
-	\item $\vec{F}$: Kraft
-	\item $\vec{p}$: Dipolmoment
-	\item $Q$: Ladung
-	\item $U$: Elektrische Spannung
-	\item $W$: Arbeit
-	\item $\varphi$: Elektrisches Potential
-	\item $\Phi$: Elektrisches Fluss
-\end{itemize}
-
 \subsection{Elektrische Ladung}
 
 Die Ladung 1 Coulomb (C) entspricht der Ladung von $\approx 6.24 \cdot 10^{18}$
@@ -128,4 +110,57 @@ Der elektrische Fluss durch eine beliebige geschlossene Fläche ist gleich der
 Summe der eingeschlossenen Ladungen.
 \[
 	\Phi = \sum Q
+\]
+
+\subsection{Kondensatoren}
+
+Kapazität:
+\[
+	C = \frac{Q}{U} \quad \left[F\right]
+\]
+
+Kapazität Plattenkondensator:
+\[
+	C = \frac{\varepsilon_0 A}{d} \quad \left[F\right]
+\]
+$d$: Abstand zwischen Platten\\
+$A$: Fläche einer Platte
+
+Energie des geladenen Kondensators:
+\[
+	E = \frac{CU^2}{2} = \frac{Q^2}{2C} = \frac{QU}{2} \quad \left[J\right]
+\]
+
+\subsubsection{Parallel-Schaltung}
+
+Kapazitäten, Spannungen und Energie addieren sich. Spannung und Energie verteilt
+sich proportional zur Kapazität der Kondensatoren.
+
+\begin{minipage}{.5\linewidth}
+	\input{tikz/kondensatoren_parallel}
+\end{minipage}
+\begin{minipage}{.5\linewidth}
+	\begin{align*}
+		& C = C_1 + C_2 \\
+		& U = U_1 + U_2 \\
+		& E = E_1 + E_2 \\
+		& \frac{U_1}{C_1} = \frac{U_2}{C_2} \\
+		& \Phi_A = \Phi_C \\
+		& \Phi_B = \Phi_D \\
+	\end{align*}
+\end{minipage}
+
+\subsubsection{Durchschlagsfestigkeit}
+
+Die Durchschlagsfestigkeit ist die maximal mögliche Spannung pro Distanz
+zwischen zwei unterschiedlich geladenen Objekten (zB Kondensatorplatten). Wird
+die Spannung überschritten oder die Distanz unterschritten, geschieht ein
+Ladungsaustausch.
+
+\subsubsection{Dielektrika}
+
+Kapazität des Plattenkondensators mit Dielektrikum, welches eine
+Permittivitätszahl von $\varepsilon_r$ aufweist:
+\[
+	C = \varepsilon_r \varepsilon_0 \cdot \frac{A}{d} = \varepsilon \cdot \frac{A}{d}
 \]
