@@ -81,6 +81,14 @@ Die elektrische Feldstärke $E$ beträgt:
 	E = \frac{F}{Q}
 \]
 
+\subsection{Elektrisches Potential}
+
+Die potentielle Energie pro Ladungseinheit wird als Elektrisches Potential bezeichnet.
+
+Das elektrisches Potential der Punktladung $Q_0$ beträgt:
+
+$ \phi = \frac{1}{4\pi \epsilon_0} \frac{Q_0}{r} $
+
 \subsection{Elektrischer Dipol}
 
 Ein elektrischer Dipol besteht aus zwei gleich grossen Punktladungen $Q$
@@ -138,24 +146,19 @@ Energie des geladenen Kondensators:
 	E = \frac{CU^2}{2} = \frac{Q^2}{2C} = \frac{QU}{2} \quad \left[J\right]
 \]
 
-\subsubsection{Parallel-Schaltung}
+\subsubsection{Schaltungen}
 
-Kapazitäten, Spannungen und Energie addieren sich. Spannung und Energie verteilt
-sich proportional zur Kapazität der Kondensatoren.
+Werden mehrere Kondensatoren \textbf{parallel} geschaltet, so liegt an allen Kondensatoren die gleiche Spannung $U$. Die totale Ladung $Q$ ist die Summe der Ladungen $Q_i$ der einzelnen Kondensatoren.
 
-\begin{minipage}{.5\linewidth}
-	\input{tikz/kondensatoren_parallel}
-\end{minipage}
-\begin{minipage}{.5\linewidth}
-	\begin{align*}
-		& C = C_1 + C_2 \\
-		& U = U_1 + U_2 \\
-		& E = E_1 + E_2 \\
-		& \frac{U_1}{C_1} = \frac{U_2}{C_2} \\
-		& \Phi_A = \Phi_C \\
-		& \Phi_B = \Phi_D \\
-	\end{align*}
-\end{minipage}
+Werden mehrere Kondensatoren \textbf{in Reihe} geschaltet, so tragen alle Kondensatoren die gleiche Ladung Q. Die an der Schaltung angelegte Spannung $U$ ist die Summe der an den einzelnen Kondensatoren anliegenden Spannungen $U_i$.
+
+Die Kapazita¨t in Reihe geschalteter Kondensatoren beträgt:
+
+$\frac{1}{C}=\sum_{i}{\frac{1}{C_i}}$
+
+\subsubsection{Kraft zwischen den Kondensatorplatten}
+
+$F=\frac{1}{2} \frac{QU}{d} = \frac{1}{2} \frac{CU^2}{d} = \frac{1}{2} QE$
 
 \subsubsection{Durchschlagsfestigkeit}
 
